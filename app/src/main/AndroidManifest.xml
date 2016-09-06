@@ -25,6 +25,18 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".MainMenuActivity">
+        </activity>
+        <activity android:name=".CustomerListActivity">
+        </activity>
+        <activity android:name=".CustomerSessionsActivity">
+        </activity>
+        <activity android:name=".EditSessionActivity">
+        </activity>
+        <activity android:name=".NewCustomerActivity">
+        </activity>
+        <activity android:name=".PaymentActivity">
+        </activity>
     </application>
 
 </manifest>
