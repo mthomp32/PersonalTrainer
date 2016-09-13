@@ -31,11 +31,13 @@
     <string name="receipt">Receipt?</string>
     <string name="pay_future">Payment for Future Session</string>
     <string name="logged_in">Logged in: JDOE</string>
+    <string name="logoff_menu_title">Logoff</string>
+    <string name="logging_off_toast">Logging You Off...</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
     <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in">Login</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
