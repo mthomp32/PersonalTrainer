@@ -29,22 +29,4 @@ public class CustomerCursorWrapper extends CursorWrapper {
 
         return customer;
     }
-
-    private CustomerBaseHelper customerBaseHelper;
-
-    public void closeDataBase() {
-        customerBaseHelper.close();
-    }
-
-    public void addCustomer(Customer customer) {
-
-        ContentValues newValues = new ContentValues();
-
-        newValues.put(CustomerTable.Cols.NAME, customer.getName());
-        newValues.put(CustomerTable.Cols.PHONE_NUMBER, customer.getPhoneNumber());
-        newValues.put(CustomerTable.Cols.ADDRESS, customer.getAddress());
-
-        SQLiteDatabase db = customerBaseHelper.getWritableDatabase();
-        db.insert(customerBaseHelper.CUSTOMERS_DATABASE_TABLE, null, newValues);
-    }
 }
