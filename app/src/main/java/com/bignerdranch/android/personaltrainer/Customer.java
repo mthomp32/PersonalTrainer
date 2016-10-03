@@ -5,13 +5,13 @@ import java.util.UUID;
 public class Customer {
 
     private String name;
-    private int phoneNumber;
+    private String phoneNumber;
     private String address;
 
     public Customer() {
     }
 
-    public Customer( String name, int phoneNumber, String address) {
+    public Customer( String name, String phoneNumber, String address) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.address = address;
@@ -25,11 +25,11 @@ public class Customer {
         this.name = name;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
@@ -43,7 +43,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        String numberString = Integer.toString(phoneNumber);
-        return name + " " + numberString + " " + address;
+        return name + " " + phoneNumber + " " + address;
     }
 }

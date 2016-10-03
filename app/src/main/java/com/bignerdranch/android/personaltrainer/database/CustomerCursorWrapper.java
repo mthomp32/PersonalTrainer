@@ -19,7 +19,7 @@ public class CustomerCursorWrapper extends CursorWrapper {
 
     public Customer getCustomer() {
         String name = getString(getColumnIndex(CustomerTable.Cols.NAME));
-        int phoneNumber = getInt(getColumnIndex(CustomerTable.Cols.PHONE_NUMBER));
+        String phoneNumber = getString(getColumnIndex(CustomerTable.Cols.PHONE_NUMBER));
         String address = getString(getColumnIndex(CustomerTable.Cols.ADDRESS));
 
         Customer customer = new Customer();

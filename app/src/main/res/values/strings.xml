@@ -33,6 +33,7 @@
     <string name="logged_in">Logged in: JDOE</string>
     <string name="logoff_menu_title">Logoff</string>
     <string name="logging_off_toast">Logging You Off...</string>
+    <string name="sample_phone_number">7271234567</string>
 
     <!-- Strings related to login -->
     <string name="prompt_username">Username</string>

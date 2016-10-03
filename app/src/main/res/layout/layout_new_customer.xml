@@ -21,7 +21,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:text="@string/name"
         android:ems="10"
         android:id="@+id/enter_name_edittext"
@@ -33,7 +33,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPostalAddress"
+        android:inputType="text"
         android:ems="10"
         android:id="@+id/address_edittext"
         android:layout_below="@+id/phone_number_edittext"
@@ -44,7 +44,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="phone"
+        android:inputType="text"
         android:ems="10"
         android:id="@+id/phone_number_edittext"
         android:layout_below="@+id/enter_name_edittext"

@@ -18,7 +18,7 @@ public class CustomerBaseHelper extends SQLiteOpenHelper {
     }
 
     public static final String DATABASE_CREATE = "create table " + CustomerTable.NAME + "(" +
-            "_id integer primary key autoincrement, " +
+            CustomerTable.KEY_ID + " integer primary key autoincrement, " +
             CustomerTable.Cols.NAME + ", " +
             CustomerTable.Cols.PHONE_NUMBER + ", " +
             CustomerTable.Cols.ADDRESS +
