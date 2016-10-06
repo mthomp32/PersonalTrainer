@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -22,6 +23,7 @@ import com.bignerdranch.android.personaltrainer.database.CustomerCursorWrapper;
 import com.bignerdranch.android.personaltrainer.database.CustomerDbSchema;
 import com.bignerdranch.android.personaltrainer.database.CustomerDbSchema.CustomerTable;
 
+import java.io.File;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
@@ -134,9 +136,5 @@ public class NewCustomerActivity extends AppCompatActivity {
     public void addCustomer(Customer c) {
         ContentValues values = getContentValues(c);
         database.insert(CustomerTable.NAME, null, values);
-    }
-
-    public void clearEditTexts() {
-
     }
 }
